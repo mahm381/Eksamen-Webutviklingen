@@ -165,13 +165,83 @@
                 </section>
             </article>
         </section>
+          <!--Dine opplysninger-->
+        <section class="user-details">
+            <h2>2. DINE OPPLYSNINGER</h2>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Leveringsadresse</legend>
+                    <label for="first-name">Fornavn*</label>
+                    <input type="text" id="first-name" placeholder="Nora*">
+                    <label for="last-name">Etternavn*</label>
+                    <input type="text" id="last-name" placeholder="Nordman*">
+                    <label for="street-address">Gateadresse*</label>
+                    <input type="text" id="street-address" placeholder="BRA Veien 4*">
+                    <label for="postcode">Postnummer*</label>
+                    <input type="text" id="postcode" placeholder="1752">
+                    <label for="city">Poststed*</label>
+                    <input type="text" id="city" placeholder="Halden">
+                </fieldset>
+                <fieldset>
+                    <legend>Kontaktinformasjon</legend>
+                    <label for="email">E-post*</label>
+                    <input type="email" id="email" placeholder="Noranordman@hiof.no">
+                    <label for="phone">Telefon*</label>
+                    <input type="tel" id="phone" placeholder="+47 49****018">
+                </fieldset>
+                <button type="submit" class="save-btn">Lagre</button>
+                <a href="#" class="cancel-link">Avbryt</a>
+            </form>
+        </section>
 
-        <section class="checkout-summary">
-            <div class="summary-container">
-                <p>Totalt antall varer: <span>3</span></p>
-                <p>Total pris: <span>Kr 5997</span></p>
-                <button>Gå til betaling</button>
-            </div>
+        <section class="delivery-options" itemscope itemtype="https://schema.org/DeliveryTimeSettings">
+            <h2>3. LEVERING</h2>
+            <form>
+                <article class="delivery-option" itemscope itemtype="https://schema.org/Offer">
+                    <input type="radio" id="express" name="delivery" value="express">
+                    <label for="express">Express delivery</label>
+                    <label for="size">Størrelse:</label>
+                    <input type="text" id="size" name="size">
+                    <span>Valg av størrelse for produktet.</span>
+                    <p><span itemprop="deliveryLeadTime">3-4 Virkedager</span></p>
+                    <p class="price"><span itemprop="priceCurrency" content="NOK">59 kr</span></p>
+                </article>
+                
+                <article class="delivery-option">
+                    <input type="radio" id="pickup" name="delivery" value="pickup">
+                    <label for="pickup">
+                        <span itemprop="name">PRODUCT NAME</span>
+                    </label>
+                    <p>1-3 Virkedager</p>
+                    <p class="price">59 kr</p>
+                </article>
+                
+                <article class="delivery-option">
+                    <input type="radio" id="standard" name="delivery" value="standard">
+                    <label for="standard">
+                        <span itemprop="name">PRODUCT NAME</span>
+                    </label>
+                    <p>5-8 Virkedager</p>
+                    <p class="price">Gratis</p>
+                </article>
+                            
+            </form>
+        </section>
+        <section class="payment">
+            <h2>4. BETALING</h2>
+            <form>
+                <label for="card-number">Kortnummer</label>
+                <input type="text" id="card-number" placeholder="**** **** **** 1234">
+                <label for="expiry-date">Utløpsdato</label>
+                <input type="text" id="expiry-date" placeholder="MM/YY">
+                <label for="cvv">CVC/CVV</label>
+                <input type="text" id="cvv" placeholder="123">
+                <section class="payment-summary">
+                    <p>Å betale inkl. mva:</p>
+                    <p class="amount"><strong>1 199 kr</strong></p>
+                </section>
+                <button type="submit" class="payment-btn">Fullfør kjøp</button>
+            </form>
         </section>
     </main>
     <footer itemscope itemtype="http://schema.org/WPFooter">
