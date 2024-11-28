@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Din moderne nettbutikk for kvalitetsprodukter med rask levering og trygg betaling.">
+    <meta name="keywords" content="nettbutikk, kvalitetsprodukter, shopping, moderne butikk, klær, levering">
+    <meta name="author" content="ModernShop">
+    <meta name="robots" content="index, follow">
+    <title>ModernShop | Checkout</title>
+
+    <!-- Open Graph Metadata -->
+    <meta property="og:title" content="ModernShop | Checkout">
+    <meta property="og:description" content="Handle trygt og enkelt med ModernShop. Oppdag våre kvalitetsprodukter i dag!">
+    <meta property="og:image" content="https://modernshop.com/img/checkout-preview.jpg">
+    <meta property="og:url" content="https://modernshop.com/checkout.html">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card Metadata -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="ModernShop | Checkout">
+    <meta name="twitter:description" content="Handle trygt og enkelt med ModernShop. Oppdag våre kvalitetsprodukter i dag!">
+    <meta name="twitter:image" content="https://modernshop.com/img/checkout-preview.jpg">
+    <meta name="twitter:site" content="@ModernShop">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Strukturert data for nettsiden -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "name": "ModernShop Checkout",
+            "url": "https://modernshop.com/checkout.html",
+            "description": "Handle trygt og enkelt med ModernShop. Oppdag våre kvalitetsprodukter i dag!",
+            "publisher": {
+                "@type": "Organization",
+                "name": "ModernShop",
+                "logo": "https://modernshop.com/img/logo.png"
+            },
+            "breadcrumb": {
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Hjem",
+                        "item": "https://modernshop.com"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "Checkout",
+                        "item": "https://modernshop.com/checkout.html"
+                    }
+                ]
+            },
+            "mainEntity": {
+                "@type": "ShoppingCart",
+                "name": "Shopping Bag",
+                "offers": {
+                    "@type": "Offer",
+                    "priceCurrency": "NOK",
+                    "price": "1199"
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <header itemscope itemtype="http://schema.org/WPHeader">
+        <div class="header-container">
+            <form itemprop="potentialAction" itemscope itemtype="http://schema.org/SearchAction">
+                <meta itemprop="target" content="https://modernshop.com/search?q={search_term_string}">
+                <div class="search-bar">
+                    <input class="search-input" type="search" placeholder="search" itemprop="query-input" required>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </form>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Hjem</a></li>
+                    <li><a href="#mest-poplær-produkter">Produkter</a></li>
+                    <li class="logo"><a href="index.html">Logo</a></li>
+                    <li><a href="#popular-categories">Kategorier</a></li>
+                    <li><a href="footer-contact">Kontakt oss</a></li>
+                </ul>
+            </nav>
+            <ul class="icons">
+                <li><a href="/konto" aria-label="Min konto"><i class="fas fa-user"></i></a></li>
+                <li><a href="/favoritter" aria-label="Mine favoritter"><i class="fas fa-heart"></i></a></li>
+                <li><a href="checkout.html" aria-label="Handlekurv"><i class="fas fa-shopping-cart"></i></a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section class="shopping-cart" itemscope itemtype="https://schema.org/ShoppingCart">
+            <h2>1. SHOPPINGBAGEN DIN</h2>
+            <article class="cart-item" itemscope itemtye="https://schema.org/Product">
+                <img src="img/img/dress.jpg" alt="Produktbilde" class="cart-image" itemprop="image">
+                <section class="cart-details">
+                    <p class="product-name" itemprop="name">PRODUCT NAME</p>
+                    <p class="product-price" itemprop="price">Kr 1999</p>
+                    <p>Farge: <span itemprop="color">Beige</span></p>
+                    <section class="cart-options">
+                        <label for="size">Størrelse:</label>
+                        <select id="size" itemprop="size"> 
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                        </select>
+                        <label for="quantity">Antall:</label>
+                        <input type="number" id="quantity" value="1" min="1" itemprop="quantity">
+                        <section class="action-icons">
+                            <a href="#" class="heart-icon" aria-label="legg til favoritter"><i class="fas fa-heart"></i></a>
+                            <a href="#" class="trash-icon" aria-label="Fjern fra Handlekurv"><i class="fas fa-trash"></i></a>
+                        </section>
+                    </section>
+                </section>
+            </article>
+            <article class="cart-item" itemscope itemtype="https://schema.org/cartitem">
+                <img src="img/img/dress.jpg" alt="Produktbilde" class="cart-image" itemprop="image">
+                <section class="cart-details">
+                    <p class="product-name" itemprop="name">PRODUCT NAME</p>
+                    <p class="product-price" itemprop="price">Kr 1999</p>
+                    <p>Farge: <span itemprop="color">Beige</span></p>
+                    <section class="cart-options">
+                        <label for="size">Størrelse:</label>
+                        <select id="size" itemprop size>
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                        </select>
+                        <label for="quantity">Antall:</label>
+                        <input type="number" id="quantity" value="1" min="1" itemprop="quantity">
+                        <section class="action-icons">
+                            <a href="#" class="heart-icon" aria-label="legg til favoritter"><i class="fas fa-heart"></i></a>
+                            <a href="#" class="trash-icon" aria-label="Fjern fra Handlekurv"><i class="fas fa-trash"></i></a>
+                        </section>
+                    </section>
+                </section>
+            </article>
+            <article class="cart-item" itemscope itemtype="https://schema.org/cartitem" >
+                <img src="img/img/dress.jpg" alt="Produktbilde" class="cart-image" itemprop="image">
+                <section class="cart-details">
+                    <p class="product-name" itempop="name">PRODUCT NAME</p>
+                    <p class="product-price" itemprop="price">Kr 1999</p>
+                    <p>Farge: Beige</p>
+                    <section class="cart-options">
+                        <label for="size">Størrelse:</label>
+                        <select id="size" itemprop size>
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                        </select>
+                        <label for="quantity">Antall:</label>
+                        <input type="number" id="quantity" value="1" min="1" itemprop="image">
+                        <section class="action-icons">
+                            <a href="#" class="heart-icon" aria-label="legg til favoritter"><i class="fas fa-heart"></i></a>
+                            <a href="#" class="heart-icon" aria-label="legg til favoritter"><i class="fas fa-heart"></i></a>
+                        </section>
+                    </section>
+                </section>
+            </article>
+        </section>
+        <!--Dine opplysninger-->
+        <section class="user-details">
+            <h2>2. DINE OPPLYSNINGER</h2>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Leveringsadresse</legend>
+                    <label for="first-name">Fornavn*</label>
+                    <input type="text" id="first-name" placeholder="Nora*">
+                    <label for="last-name">Etternavn*</label>
+                    <input type="text" id="last-name" placeholder="Nordman*">
+                    <label for="street-address">Gateadresse*</label>
+                    <input type="text" id="street-address" placeholder="BRA Veien 4*">
+                    <label for="postcode">Postnummer*</label>
+                    <input type="text" id="postcode" placeholder="1752">
+                    <label for="city">Poststed*</label>
+                    <input type="text" id="city" placeholder="Halden">
+                </fieldset>
+                <fieldset>
+                    <legend>Kontaktinformasjon</legend>
+                    <label for="email">E-post*</label>
+                    <input type="email" id="email" placeholder="Noranordman@hiof.no">
+                    <label for="phone">Telefon*</label>
+                    <input type="tel" id="phone" placeholder="+47 49****018">
+                </fieldset>
+                <button type="submit" class="save-btn">Lagre</button>
+                <a href="#" class="cancel-link">Avbryt</a>
+            </form>
+        </section>
+
+        <section class="delivery-options" itemscope itemtype="https://schema.org/DeliveryTimeSettings">
+            <h2>3. LEVERING</h2>
+            <form>
+                <article class="delivery-option" itemscope itemtype="https://schema.org/Offer">
+                    <input type="radio" id="express" name="delivery" value="express">
+                    <label for="express">
+                        <strong itemrop="name">Express Hjemlevering</strong>
+                        <span class="delivery-info">
+                            <p><span itemprop="deliveryLeadTime">3-4 Virkedager</span></p>
+                            <p class="price"><span itemprop="priceCurrency" content="NOK">59 kr</span></p>
+                        </span>
+                    </label>
+                </article>
+                <article class="delivery-option">
+                    <input type="radio" id="pickup" name="delivery" value="pickup">
+                    <label for="pickup">
+                        <strong>Ekspress Pakke til utleveringssted</strong>
+                        <span class="delivery-info">
+                            <p>1-3 Virkedager</p>
+                            <p class="price">59 kr</p>
+                        </span>
+                    </label>
+                </article>
+                <article class="delivery-option">
+                    <input type="radio" id="standard" name="delivery" value="standard">
+                    <label for="standard">
+                        <strong>Standard Hjemlevering</strong>
+                        <span class="delivery-info">
+                            <p>5-8 Virkedager</p>
+                            <p class="price">Gratis</p>
+                        </span>
+                    </label>
+                </article>
+            </form>
+        </section>
+        <section class="payment">
+            <h2>4. BETALING</h2>
+            <form>
+                <label for="card-number">Kortnummer</label>
+                <input type="text" id="card-number" placeholder="**** **** **** 1234">
+                <label for="expiry-date">Utløpsdato</label>
+                <input type="text" id="expiry-date" placeholder="MM/YY">
+                <label for="cvv">CVC/CVV</label>
+                <input type="text" id="cvv" placeholder="123">
+                <section class="payment-summary">
+                    <p>Å betale inkl. mva:</p>
+                    <p class="amount"><strong>1 199 kr</strong></p>
+                </section>
+                <button type="submit" class="payment-btn">Fullfør kjøp</button>
+            </form>
+        </section>
+    </main>
+
+    <footer itemscope itemtype="http://schema.org/WPFooter">
+        <section class="footer-container">
+            <!-- Logo og beskrivelse -->
+            <article class="footer-logo" itemscope itemtype="http://schema.org/Organization">
+                <h2 itemprop="name">Logo</h2>
+                <p itemprop="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis.</p>
+            </article>
+    
+            <!-- Kontaktinformasjon --> 
+            <article id="footer-contact" class="footer-contact" itemscope itemtype="http://schema.org/ContactPoint"> 
+                <h3 itemprop="name">Kontakt</h3>
+                <p><i class="fas fa-map-marker-alt"></i> <span itemprop="address"> Adresse: B R A Veien 4, 1757 Halden</span></p>
+                <p><i class="fas fa-phone"></i> <span itemprop="telephone"> Telefon: 69 60 80 00</span></p>
+                <p><i class="fas fa-envelope"></i> <span itemprop="email"> E-post: halden@hiof.no</span></p>
+                <p><i class="fas fa-clock"></i> <span itemprop="Åpnings og stengetid"> Åpningstider: Stenger 15:00</span></p>
+            </article>
+    
+            <!-- Snarveier -->
+            <article class="footer-links" itemscope itemtype="https://schema.org/SiteNavigationElement">
+                <h3 itemprop="name">Snarveier</h3>
+                <ul>
+                    <li><a href="product.html" itemprop="url">Produkter</a></li>
+                    <li><a href="#popular-categories" itemprop="url">Kategorier</a></li>
+                    <li><a href="#footer-contact" itemprop="url">Kontakt oss</a></li>
+                </ul>
+            </article>
+    
+            <!-- Sosiale medier -->
+            <article class="footer-socials" itemscope itemtype="https://schema.org/Organization">
+                <h3 itemprop="name">Sosiale medier</h3>
+                <section class="social-icons">
+                    <a href="https://www.instagram.com/accounts/login/?hl=en" itemprop="sameAs" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.facebook.com/" itemprop="sameAs" aria-label="Facebook">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/" itemprop="sameAs" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://no.pinterest.com/" itemprop="sameAs" aria-label="Pinterest">
+                        <i class="fab fa-pinterest"></i>
+                    </a>
+                </section>
+                
+            </article>
+        </section>
+       <script src="script.js"></script>
+    </footer>    
+</body>
+</html>            
+</body>
+</html>
